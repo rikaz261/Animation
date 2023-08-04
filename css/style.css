@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.car {
+    text-align: center;
+    position: relative;
+    transform: scaleX(-1); 
+  }
+  
+  .wheel img,
+  .wheel-2 img{
+    position: absolute; 
+    bottom: 0; 
+    width: 155px; 
+    height: 155px; 
+    animation-name: wheel; 
+    animation-duration: 0.5s; 
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite;
+  }
+  
+  .wheel img {
+    left: 29%;
+    margin-bottom: 335px; 
+
+  }
+  
+  .wheel-2 img{
+    right: 27%; 
+    margin-bottom: 335px;
+  }
+  
+  @keyframes wheel {
+    0% {
+      transform: rotate(0deg); 
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  hr {
+    border: 5px solid black;
+  }
+  
+  
+  
